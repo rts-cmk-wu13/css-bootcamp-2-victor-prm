@@ -1,0 +1,33 @@
+:root {
+    --custom-width: clamp(320px, 100%, 1024px);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    width: var(--custom-width);
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.suggestions-carousel {
+    display: flex;
+    justify-content: space-between;
+}
