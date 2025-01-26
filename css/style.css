@@ -1,0 +1,23 @@
+@import url("../css/base.css");
+
+.logo-container{
+    height: 100%;
+}
+
+.logo-container > img{
+    height: 100%;
+    object-fit: contain;
+}
+
+.menu-and-search{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+
+
+.suggestions-carousel {
+    display: flex;
+    justify-content: space-between;
+}

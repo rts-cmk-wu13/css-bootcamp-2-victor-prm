@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+:root {
+    --custom-width: clamp(320px, 100%, 1024px);
+    --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', Times, serif;
+    --font-sans-serif:  Helvetica, Arial, sans-serif;
+    --color-red-main: tomato;
+}
+
+*{  
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-serif);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 80px;
+    padding: 16px;
+    border-bottom: gainsboro 1px solid;
+}
+
+
+
+header{
+    border-bottom: gainsboro 1px solid;
+}
+
+a, button{
+    font-family: var(--font-sans-serif);
+    font-weight: 600;
+    color: black;
+    &&:hover{
+        color: var(--color-red-main);
+        cursor: pointer;
+    }
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+li:has(a) {
+    list-style-type: none;
+}
+
+button {
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+    border: none;
+    text-transform: uppercase;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    width: var(--custom-width);
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header > div > ul {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    padding: 8px 0;
+}
