@@ -37,7 +37,8 @@ button {
 }
 
 a,
-button {
+button,
+input[type="submit"] {
     font-family: var(--font-sans-serif);
     font-weight: 600;
     color: black;
@@ -125,7 +126,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #eee;
+    background-color: #d0d0d0;
     border-top: 1px solid gainsboro;
     padding: 1rem;
     gap: 1rem;
@@ -139,4 +140,23 @@ footer h5 {
     font-family: var(--font-sans-serif);
     font-size: 1rem;
     color: #606060;
+}
+
+aside {
+    width: 100%;
+    max-width: 25%;
+}
+
+footer input[type="email"] {
+    padding: 0.25rem 0.5rem;
+}
+
+footer input[type="email"]::placeholder {
+    opacity: 0.5;
+}
+
+footer input[type="submit"] {
+    padding: 0.25rem 0.5rem;
+    text-transform: uppercase;
+    border: none;
 }

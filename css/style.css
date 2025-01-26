@@ -34,9 +34,12 @@
 }
 
 .carousel-buttons {
+    position: absolute;
     display: flex;
     height: fit-content;
     gap: 1rem;
+    right: 0%;
+    bottom: 1.25rem;
 }
 
 .carousel-buttons>i {
@@ -94,6 +97,7 @@
     grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
     gap: 1.5em;
     width: var(--custom-width);
+    border-bottom: 1px solid white;
 }
 
 .footer-column-container {
@@ -101,6 +105,16 @@
     flex-direction: column;
     width: var(--custom-width);
     align-items: center;
+    gap: 0.25rem;
+}
+
+.footer-column-container button, footer input[type="submit"]{
+    background-color: #eee;
+    color: #2e2e2e;
+}
+
+.footer-column-container button{
+    margin-top: 1rem;
 }
 
 .inline-link-with-icon {
@@ -158,6 +172,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .user-info {
@@ -167,10 +182,11 @@
     max-width: 14rem; */
     gap: 0.25rem 0.5rem;
     align-items: end;
+    padding-bottom: 0.75rem;
 }
 
 .user-info>i {
-    background-color: #7d7d7d;
+    background-color: #2e2e2e;
     color: white;
     width: 2rem;
     height: 2rem;
@@ -183,6 +199,7 @@
 .user-info>small {
     padding-left: 2.5rem;
     flex-basis: 100%;
+    color: #999999;
 }
 
 .variants-container,
@@ -225,3 +242,43 @@
     background: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0) 100%);
 }
+
+.article-subscription-cta button{
+    background-color: var(--color-red-main);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+}
+
+.suggestions-header > h2, .latest-news>aside>h5, .recommendations-section>h5, .comments-section>h5, .category{
+    color: var(--color-red-main);
+    padding-bottom: 0.5rem;
+}
+
+.suggestions-header > h2, .latest-news>aside>h5, .recommendations-section>h5, .comments-section>h5, .category{
+    color: var(--color-red-main);
+    padding-bottom: 0.5rem;
+    width: 100%;
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 0.75rem;
+}
+
+.comments-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 2rem;
+}
+
+.frontpage-right-now > span{
+    display: inline-flex;
+    align-items: center;
+}
+
+.frontpage-right-now {
+    margin-top: 1.66rem;
+    border-top: 1px solid gainsboro;
+    padding-top: 1rem;
+}
+
+
