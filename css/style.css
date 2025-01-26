@@ -1,19 +1,19 @@
 @import url("../css/base.css");
 
-.logo-container{
+.logo-container {
     height: 100%;
 }
 
-.logo-container > img{
+.logo-container>img {
     height: 100%;
     object-fit: contain;
 }
 
-.menu-and-search{
+.menu-and-search {
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
-    
+
 }
 
 .suggestions-carousel {
@@ -21,8 +21,98 @@
     justify-content: space-between;
 }
 
-.current-article > article{
+.current-article>article {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
+
+}
+
+.article,
+.article-header,
+.article-subscription-cta,
+.frontpage-right-now,
+.comments-section {
+    background-color: aqua;
+    justify-content: end;
+    margin-left: auto;
+    width: 70%;
+}
+
+.article-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.article-body {
+    display: flex;
+}
+
+.latest-news {
+    display: flex;
+    width: 100%;
+}
+
+.frontpage-portal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    gap: 24px;
+}
+
+.frontpage-portal>article {
+    width: 100%;
+}
+
+.frontpage-portal>article img {
+    width: 100%;
+}
+
+.footer-row-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    gap: 1.5em;
+    width: var(--custom-width);
+}
+
+.footer-column-container {
+    display: flex;
+    flex-direction: column;
+    width: var(--custom-width);
+    align-items: center;
+}
+
+.inline-link-with-icon {
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+    border: none;
+}
+
+.footer-row-container>* {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.footer-row-container>*>*, .about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.footer-row-container a {
+    font-size: 0.75rem;
+    color: #7d7d7d;
+}
+
+.protuding-image-container>img {
+    position: relative;
+    transform: translateY(-3rem);
+    max-width: 15rem;
+    aspect-ratio: 1/1.5;
+}
+
+.comments{
+    display: flex;
 }
