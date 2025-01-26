@@ -12,12 +12,17 @@
 .menu-and-search{
     display: flex;
     align-items: center;
-    column-gap: 8px;
+    column-gap: 0.5rem;
+    
 }
-
-
 
 .suggestions-carousel {
     display: flex;
     justify-content: space-between;
+}
+
+.current-article > article{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }

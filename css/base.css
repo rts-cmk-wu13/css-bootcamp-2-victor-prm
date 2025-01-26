@@ -18,10 +18,11 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: auto;
     align-items: end;
-    height: 80px;
-    padding: 16px;
+    height: 5rem;
+    padding: 1rem;
     border-bottom: gainsboro 1px solid;
 }
 
@@ -52,7 +53,7 @@ li:has(a) {
 
 button {
     display: flex;
-    column-gap: 8px;
+    column-gap: 0.5rem;
     align-items: center;
     border: none;
     text-transform: uppercase;
@@ -62,19 +63,33 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 4rem;
+    padding: 4rem;
 }
 
 article {
     width: var(--custom-width);
-    max-width: 1024px;
+    max-width: 64rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+nav div:first-child, nav div:last-child{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+nav div:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+   
+}
+
 header > div > ul {
     display: flex;
-    gap: 80px;
+    gap: 5rem;
     justify-content: center;
-    padding: 8px 0;
+    padding: 0.5rem 0;
 }
