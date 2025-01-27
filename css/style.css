@@ -331,3 +331,9 @@ aside .news-item-small:last-of-type{
     flex-wrap: wrap;
     gap: 0.5rem;
 }
+
+.author-details, .editor-details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
