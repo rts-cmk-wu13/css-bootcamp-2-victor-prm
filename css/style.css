@@ -1,0 +1,339 @@
+@import url("../css/base.css");
+
+.logo-container {
+    height: 100%;
+}
+
+.logo-container>img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.menu-and-search {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    padding-right: 1rem;
+
+}
+
+.menu-and-search input[type="search"] {
+    width: 100%;
+    max-width: 10rem;
+}
+
+
+.suggestions-carousel {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.suggestions-carousel>article {
+    width: 100%;
+}
+
+.suggestions-carousel>article>img,
+.frontpage-portal>article>img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.carousel-buttons {
+    position: absolute;
+    display: flex;
+    height: fit-content;
+    gap: 1rem;
+    right: 0%;
+    bottom: 1.25rem;
+}
+
+.carousel-buttons>i {
+    background-color: #7d7d7d;
+    color: white;
+    border-radius: 100%;
+}
+
+.current-article>article {
+    width: var(--custom-width);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+}
+
+.article,
+.article-header,
+.article-subscription-cta,
+.frontpage-right-now,
+.comments-section {
+    justify-content: end;
+    margin-left: auto;
+    width: 70%;
+}
+
+.article-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.article-body {
+    display: flex;
+}
+
+.latest-news {
+    display: flex;
+    width: 100%;
+}
+
+.frontpage-portal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    gap: 24px;
+}
+
+.frontpage-portal>article {
+    width: 100%;
+}
+
+.footer-row-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    gap: 1.5em;
+    width: var(--custom-width);
+    border-bottom: 1px solid white;
+    padding-bottom: 1rem;
+}
+
+.footer-column-container {
+    display: flex;
+    flex-direction: column;
+    width: var(--custom-width);
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.footer-column-container button, footer input[type="submit"]{
+    background-color: #eee;
+    color: #2e2e2e;
+}
+
+.footer-column-container button{
+    margin-top: 1rem;
+}
+
+.footer-column-container > p{
+    text-align: center;
+}
+
+.inline-link-with-icon {
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+    border: none;
+}
+
+.footer-row-container>* {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.footer-row-container>*>*,
+.about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.footer-row-container a {
+    font-size: 0.75rem;
+    color: #7d7d7d;
+}
+
+.protuding-image-container {
+    position: relative;
+    transform: translateY(-3rem);
+    display: flex;
+    align-items: center;
+
+}
+
+.protuding-image-container>img {
+    width: 100%;
+    max-width: 15rem;
+    aspect-ratio: 1/1.5;
+    border: 1px solid gainsboro;
+}
+
+.comments {
+    display: flex;
+}
+
+.ad-container {
+    max-width: 40rem;
+}
+
+.ad-container>img {
+    max-width: 100%;
+}
+
+.suggestions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.user-info {
+    display: flex;
+    flex-wrap: wrap;
+    /*     flex-wrap: wrap;
+    max-width: 14rem; */
+    gap: 0.25rem 0.5rem;
+    align-items: end;
+}
+
+.user-info>i {
+    background-color: #2e2e2e;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.user-info>small {
+    padding-left: 2.5rem;
+    flex-basis: 100%;
+    color: #999999;
+}
+
+.variants-container,
+.socials-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-header>p:first-child {
+    font-family: var(--font-sans-serif);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.subscription-needed {
+    font-family: var(--font-sans-serif);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-red-main);
+}
+
+.article-subscription-cta {
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.article-subscription-cta::before {
+    position: absolute;
+    content: "";
+    transform: translateY(-150%);
+    width: 100%;
+    height: 6rem;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0) 100%);
+}
+
+.article-subscription-cta button{
+    background-color: var(--color-red-main);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+}
+
+.suggestions-header > h2, .latest-news>aside>h5, .recommendations-section>h5, .comments-section>h5, .category{
+    color: var(--color-red-main);
+    padding-bottom: 0.5rem;
+}
+
+.suggestions-header > h2, .latest-news>aside>h5, .recommendations-section>h5, .comments-section>h5, .category{
+    color: var(--color-red-main);
+    padding-bottom: 0.5rem;
+    width: 100%;
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 0.75rem;
+}
+
+.comments-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 2rem;
+}
+
+.frontpage-right-now > span{
+    display: inline-flex;
+    align-items: center;
+}
+
+.frontpage-right-now {
+    margin-top: 1.66rem;
+    border-top: 1px solid gainsboro;
+    padding-top: 1rem;
+}
+
+.news-item-small{
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+aside .news-item-small:last-of-type{
+    margin-bottom: 1rem;
+    border-bottom: 1px solid gainsboro;
+}
+
+.recommend-comment{
+    font-weight: 200;
+    font-size: 0.75rem;
+    color: #2e2e2e;
+}
+
+.user-comment{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem
+}
+
+
+.article-subscription-cta-text{
+    max-width: 28rem;
+}
+
+#more-news{
+    width: 100%;
+    column-gap: 0.25rem;
+}
+
+.author-contact{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.author-details, .editor-details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
