@@ -13,6 +13,7 @@
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
+    padding-right: 1rem;
 
 }
 
@@ -104,6 +105,7 @@
     gap: 1.5em;
     width: var(--custom-width);
     border-bottom: 1px solid white;
+    padding-bottom: 1rem;
 }
 
 .footer-column-container {
@@ -121,6 +123,10 @@
 
 .footer-column-container button{
     margin-top: 1rem;
+}
+
+.footer-column-container > p{
+    text-align: center;
 }
 
 .inline-link-with-icon {
@@ -231,20 +237,21 @@
 }
 
 .article-subscription-cta {
-    height: 8rem;
+    height: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     position: relative;
+    text-align: center;
 }
 
 .article-subscription-cta::before {
     position: absolute;
     content: "";
-    transform: translateY(-200%);
+    transform: translateY(-150%);
     width: 100%;
-    height: 4rem;
+    height: 6rem;
     background: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0) 100%);
 }
@@ -309,3 +316,18 @@ aside .news-item-small:last-of-type{
     gap: 0.75rem
 }
 
+
+.article-subscription-cta-text{
+    max-width: 28rem;
+}
+
+#more-news{
+    width: 100%;
+    column-gap: 0.25rem;
+}
+
+.author-contact{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}

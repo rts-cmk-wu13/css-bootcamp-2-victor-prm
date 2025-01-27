@@ -34,6 +34,7 @@ header {
 
 button {
     padding: 0.5rem 1em;
+    background-color: transparent;
 }
 
 a,
@@ -165,4 +166,19 @@ footer form{
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+}
+
+.email-rounded, .raven-rounded{
+    color: white;
+   border-radius: 100%;
+   font-size: 16px;
+   padding: 0.25rem;
+}
+
+.email-rounded{
+    background-color: #d0d0d0;
+}
+
+.raven-rounded{
+    background-color: #26a7de;
 }
