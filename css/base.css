@@ -4,7 +4,7 @@
     --custom-width: clamp(20rem, 100%, 75rem);
     --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', Times, serif;
     --font-sans-serif: Helvetica, Arial, sans-serif;
-    --color-red-main: tomato;
+    --color-red-main: #e5000a;
 }
 
 * {
@@ -159,4 +159,10 @@ footer input[type="submit"] {
     padding: 0.25rem 0.5rem;
     text-transform: uppercase;
     border: none;
+}
+
+footer form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
